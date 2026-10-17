@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paw QUIZ email preview</title>
+<style>
+  body{margin:0;font-family:system-ui,sans-serif;background:#2b2735;color:#eee}
+  header{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:12px 16px;background:#1d1a25}
+  header b{margin-right:auto}
+  button{font:inherit;padding:6px 14px;border-radius:8px;border:1px solid #6b6580;background:#3a3548;color:#fff;cursor:pointer}
+  button[aria-pressed=true]{background:#ec6197;border-color:#ec6197}
+  main{display:flex;justify-content:center;padding:16px}
+  iframe{border:0;background:#fff;border-radius:8px;height:calc(100vh - 90px);max-width:100%;transition:width .2s}
+  small{opacity:.7}
+</style>
+</head>
+<body>
+<header>
+  <b>Paw QUIZ email preview</b>
+  <span>
+    <button data-t="verify-email" aria-pressed="true">Verify email</button>
+    <button data-t="reset-password" aria-pressed="false">Reset password</button>
+  </span>
+  <span>
+    <button data-w="390" aria-pressed="false">Mobile 390</button>
+    <button data-w="768" aria-pressed="false">Tablet 768</button>
+    <button data-w="1100" aria-pressed="true">Desktop</button>
+  </span>
+  <span><button id="txt" aria-pressed="false">Plain text</button></span>
+  <small>Run <code>node scripts/render.mjs --preview</code> first. Sample link only.</small>
+</header>
+<main><iframe id="f" src="verify-email.rendered.html" style="width:1100px" title="Email preview"></iframe></main>
+<script>
+  const f=document.getElementById('f');
+  let tpl='verify-email', text=false;
+  const load=()=>{f.src=tpl+(text?'.rendered.txt':'.rendered.html');};
+  document.querySelectorAll('[data-t]').forEach(b=>b.onclick=()=>{
+    document.querySelectorAll('[data-t]').forEach(x=>x.setAttribute('aria-pressed',x===b));
+    tpl=b.dataset.t; load();
+  });
+  document.getElementById('txt').onclick=e=>{text=!text;e.target.setAttribute('aria-pressed',text);load();};
+  document.querySelectorAll('[data-w]').forEach(b=>b.onclick=()=>{
+    document.querySelectorAll('[data-w]').forEach(x=>x.setAttribute('aria-pressed',x===b));
+    f.style.width=b.dataset.w+'px';
+  });
+</script>
+</body>
+</html>
