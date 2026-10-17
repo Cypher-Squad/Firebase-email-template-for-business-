@@ -1,0 +1,154 @@
+[
+  {
+    "template": "verify-email",
+    "viewport": "mobile-360",
+    "checks": {
+      "no horizontal scroll": true,
+      "card fits viewport": true,
+      "card max 600px": true,
+      "all images loaded": true,
+      "button tap height >= 44px": true,
+      "button href is set": true,
+      "hero is new image (1080x1088)": true,
+      "hero file matches original": true
+    },
+    "btn": [
+      304,
+      60
+    ],
+    "card": 340
+  },
+  {
+    "template": "verify-email",
+    "viewport": "mobile-390",
+    "checks": {
+      "no horizontal scroll": true,
+      "card fits viewport": true,
+      "card max 600px": true,
+      "all images loaded": true,
+      "button tap height >= 44px": true,
+      "button href is set": true,
+      "hero is new image (1080x1088)": true,
+      "hero file matches original": true
+    },
+    "btn": [
+      334,
+      60
+    ],
+    "card": 370
+  },
+  {
+    "template": "verify-email",
+    "viewport": "tablet-768",
+    "checks": {
+      "no horizontal scroll": true,
+      "card fits viewport": true,
+      "card max 600px": true,
+      "all images loaded": true,
+      "button tap height >= 44px": true,
+      "button href is set": true,
+      "hero is new image (1080x1088)": true,
+      "hero file matches original": true
+    },
+    "btn": [
+      520,
+      58
+    ],
+    "card": 600
+  },
+  {
+    "template": "verify-email",
+    "viewport": "desktop-1280",
+    "checks": {
+      "no horizontal scroll": true,
+      "card fits viewport": true,
+      "card max 600px": true,
+      "all images loaded": true,
+      "button tap height >= 44px": true,
+      "button href is set": true,
+      "hero is new image (1080x1088)": true,
+      "hero file matches original": true
+    },
+    "btn": [
+      520,
+      58
+    ],
+    "card": 600
+  },
+  {
+    "template": "reset-password",
+    "viewport": "mobile-360",
+    "checks": {
+      "no horizontal scroll": true,
+      "card fits viewport": true,
+      "card max 600px": true,
+      "all images loaded": true,
+      "button tap height >= 44px": true,
+      "button href is set": true,
+      "hero is new image (1080x1088)": true,
+      "hero file matches original": true
+    },
+    "btn": [
+      304,
+      60
+    ],
+    "card": 340
+  },
+  {
+    "template": "reset-password",
+    "viewport": "mobile-390",
+    "checks": {
+      "no horizontal scroll": true,
+      "card fits viewport": true,
+      "card max 600px": true,
+      "all images loaded": true,
+      "button tap height >= 44px": true,
+      "button href is set": true,
+      "hero is new image (1080x1088)": true,
+      "hero file matches original": true
+    },
+    "btn": [
+      334,
+      60
+    ],
+    "card": 370
+  },
+  {
+    "template": "reset-password",
+    "viewport": "tablet-768",
+    "checks": {
+      "no horizontal scroll": true,
+      "card fits viewport": true,
+      "card max 600px": true,
+      "all images loaded": true,
+      "button tap height >= 44px": true,
+      "button href is set": true,
+      "hero is new image (1080x1088)": true,
+      "hero file matches original": true
+    },
+    "btn": [
+      520,
+      58
+    ],
+    "card": 600
+  },
+  {
+    "template": "reset-password",
+    "viewport": "desktop-1280",
+    "checks": {
+      "no horizontal scroll": true,
+      "card fits viewport": true,
+      "card max 600px": true,
+      "all images loaded": true,
+      "button tap height >= 44px": true,
+      "button href is set": true,
+      "hero is new image (1080x1088)": true,
+      "hero file matches original": true
+    },
+    "btn": [
+      520,
+      58
+    ],
+    "card": 600
+  }
+]
